@@ -1,0 +1,23 @@
+https://dockertips.com/oracle
+
+docker pull wnameless/oracle-xe-11g-r2
+
+docker run -d --name ora11 -p 49160:22 -p 49161:1521  -p 8080:8080 \
+-e ORACLE_ALLOW_REMOTE=true  \
+-e ORACLE_PASSWORD_VERIFY=true \
+-e ORACLE_DISABLE_ASYNCH_IO=true \
+-e ORACLE_ENABLE_XDB=true \
+wnameless/oracle-xe-11g-r2
+
+nmap 172.17.0.2
+
+Host:localhost | Port:1521 | Database: xe | identificador: SID | UserName: system | Password: oracle
+     172.17.0.2
+
+
+
+Projects spring-boot
+https://github.com/jeffsheets/MockRestServiceServerExample/blob/master/src/test/java/com/jeffsheets/rest/SimpleRestServiceFunctionalTest.java
+https://mkyong.com/spring-boot/spring-boot-spring-data-jpa-oracle-example/
+https://www.baeldung.com/spring-oracle-connection-pooling
+https://www.javaguides.net/2020/01/spring-boot-hibernate-oracle-crud-example.html

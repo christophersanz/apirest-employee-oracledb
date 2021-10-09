@@ -1,0 +1,58 @@
+= Crud with Spring Data for Tarjeta oh! =
+
+This is an simple example about how to build an application with Spring Data Application.
+
+This application uses a Oracle Data Base.
+
+== How to run it?
+
+```
+mvn spring-boot:run
+
+```
+
+
+== How can I test it?
+DOCUMENTATION SERVICES
+http://localhost:8091/swagger-ui.html
+
+you have two different endpoints:
+
+Get - http://localhost:8091/api/healthcheck
+curl --location --request GET 'http://localhost:8091/api/healthcheck'
+
+Post - http://localhost:8091/api/employee
+curl --location --request POST 'http://localhost:8091/api/employee' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "nombres": "Christopher Gustavo",
+    "apellidos": "Sanchez Calderon",
+    "edad": 25,
+    "fechaNacimiento": "1980-06-23",
+    "salario": 70000
+}'
+
+Get - http://localhost:8091/api/employee/1
+curl --location --request GET 'http://localhost:8091/api/employee/1'
+
+Put - http://localhost:8091/api/employee/1
+curl --location --request PUT 'http://localhost:8091/api/employee/1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "nombres": "Christopher Gustavo",
+    "apellidos": "Sanchez Calderon",
+    "edad": 33,
+    "fechaNacimiento": "1980-06-23",
+    "salario": 70000
+}'
+
+Delete - http://localhost:8091/api/employee/1
+curl --location --request DELETE 'http://localhost:8091/api/employee/1' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "nombres": "Christopher Gustavo",
+    "apellidos": "Sanchez Calderon",
+    "edad": 33,
+    "fechaNacimiento": "1980-06-23",
+    "salario": 70000
+}'

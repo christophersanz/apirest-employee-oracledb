@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "nombres": "Christopher Gustavo",
+  "apellidos": "Sanchez Calderon",
+  "edad": 25,
+  "fechaNacimiento": "1980-06-22",
+  "salario": 70000
+},
+{
+  "id": 2,
+  "nombres": "Ronadl Gustavo",
+  "apellidos": "Sanchez Calderon",
+  "edad": 21,
+  "fechaNacimiento": "1990-07-01",
+  "salario": 50000
+}
+
